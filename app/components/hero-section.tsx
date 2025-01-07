@@ -312,11 +312,10 @@ export function HeroSection() {
         </div>
       </section>
 
-      <div className='text-center py-12 lg:py-20'>
+      <div className='text-center py-12 lg:py-20 sm:py-10'>
         <p className='font text-2xl lg:text-3xl tracking-wide text-[#333]'>&apos;The manner of giving is worth more than the gift.&apos;</p>
         <p className='text-sm mt-2'>Pierre Corneille</p>
       </div>
     </div>
   )
 }
-

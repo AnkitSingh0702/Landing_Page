@@ -16,7 +16,7 @@ export function StoreCarousel() {
     loop: false,
     duration: 30
   })
-  const [, setCurrentIndex] = React.useState(0)
+  const [currentIndex, setCurrentIndex] = React.useState(0)
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(true)
   const [progress, setProgress] = React.useState(0)
