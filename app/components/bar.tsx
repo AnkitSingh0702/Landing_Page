@@ -16,6 +16,7 @@ export function StoreCarousel() {
     loop: false,
     duration: 30
   })
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [canScrollPrev, setCanScrollPrev] = React.useState(false)
   const [canScrollNext, setCanScrollNext] = React.useState(true)
