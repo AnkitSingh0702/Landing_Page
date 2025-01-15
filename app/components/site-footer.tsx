@@ -8,32 +8,36 @@ import { IoArrowForward } from "react-icons/io5"
 
 export function SiteFooter() {
   return (
-    <div className=""><section className=" py-20 mt-40">
-      <div className="  px-8">
+    <><section className=" lg:mt-[7rem] ">
+      <div className=" px-6   py-[6rem]  bg-[#f0efe8] ">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center">
-            <h3 className="text-[1rem] font-[700px] font-heading2 mb-2">Certified B Corp</h3>
-            <p className="text-[0.875rem] leading-[1.7] tracking-wide text-[#333333]/80 max-w-[320px] mx-auto">
+
+
+          <div className="lg:text-center sm:text-left">
+            <h3 className="text-[1rem]  font-semibold font-heading2 mb-2">Certified B Corp</h3>
+            <p className="text-[0.875rem] leading-[1.7] tracking-wide text-[#333333]/80 ">
               We meet the highest verified standards of social and environmental performance, transparency and accountability.
             </p>
           </div>
 
-          <div className="text-center">
-            <h3 className="text-[1rem] font-[700px] font-heading2 mb-2">Leaping Bunny approved</h3>
-            <p className="text-[0.875rem] leading-[1.7] text-[#333333]/80 max-w-[320px] mx-auto tracking-wide">
+          <div className="lg:text-center sm:text-left">
+            <h3 className="text-[1rem] font-semibold font-heading2 mb-2">Leaping Bunny approved</h3>
+            <p className="text-[0.875rem] leading-[1.7] text-[#333333]/80  tracking-wide">
               Our formulations are approved as cruelty free under the Cruelty Free International Leaping Bunny programme.
             </p>
           </div>
 
-          <div className="text-center">
-            <h3 className="text-[1rem] font-[700px] font-heading2 mb-2">PETA recognition</h3>
-            <p className="text-[0.875rem] leading-[1.7] text-[#333333]/80 max-w-[320px] mx-auto">
+          <div className="lg:text-center sm:text-left">
+            <h3 className="text-[1rem] font-semibold font-heading2 mb-2">PETA recognition</h3>
+            <p className="text-[0.875rem] leading-[1.7] text-[#333333]/80 ">
               We appear on PETA&apos;s internationally recognised vegan and cruelty-free lists.
             </p>
           </div>
         </div>
       </div>
     </section>
+    
+    
     
     
     <footer className="bg-[#252525] text-white">
@@ -157,53 +161,53 @@ export function SiteFooter() {
 
             {/* About */}
             <div className="md:grid grid-cols-2 gap-x-5 gap-y-5">
-            <div className="space-y-4">
-              <h3 className="text-base border-b py-4">About</h3>
-              <nav className="space-y-4">
-                {[
-                  { text: "Our story" },
-                  { text: "Foundation" },
-                  { text: "Careers" },
-                  { text: "Privacy policy" },
-                  { text: "Accessibility" },
-                  { text: "Cookie Policy" },
-                ].map((item) => (
-                  <Link
-                    key={item.text}
-                    href="#"
-                    className="flex items-center justify-between text-sm text-white"
-                  >
-                    {item.text}
+              <div className="space-y-4">
+                <h3 className="text-base border-b py-4">About</h3>
+                <nav className="space-y-4">
+                  {[
+                    { text: "Our story" },
+                    { text: "Foundation" },
+                    { text: "Careers" },
+                    { text: "Privacy policy" },
+                    { text: "Accessibility" },
+                    { text: "Cookie Policy" },
+                  ].map((item) => (
+                    <Link
+                      key={item.text}
+                      href="#"
+                      className="flex items-center justify-between text-sm text-white"
+                    >
+                      {item.text}
 
-                  </Link>
-                ))}
-              </nav>
+                    </Link>
+                  ))}
+                </nav>
+              </div>
+
+              {/* Social Media */}
+              <div className="space-y-4">
+                <h3 className="text-base border-b py-4">Social media</h3>
+                <nav className="space-y-4">
+                  {[
+                    { text: "Instagram", hasArrow: true },
+                    { text: "Twitter", hasArrow: true },
+                    { text: "LinkedIn", hasArrow: true },
+                    { text: "WeChat" },
+                    { text: "Weibo", hasArrow: true },
+                  ].map((item) => (
+                    <Link
+                      key={item.text}
+                      href="#"
+                      className="flex items-center text-sm text-white"
+                    >
+                      {item.text}
+                      {item.hasArrow && <ArrowUpRight className="h-4 w-4" />}
+                    </Link>
+                  ))}
+                </nav>
+              </div>
             </div>
 
-            {/* Social Media */}
-            <div className="space-y-4">
-              <h3 className="text-base border-b py-4">Social media</h3>
-              <nav className="space-y-4">
-                {[
-                  { text: "Instagram", hasArrow: true },
-                  { text: "Twitter", hasArrow: true },
-                  { text: "LinkedIn", hasArrow: true },
-                  { text: "WeChat" },
-                  { text: "Weibo", hasArrow: true },
-                ].map((item) => (
-                  <Link
-                    key={item.text}
-                    href="#"
-                    className="flex items-center text-sm text-white"
-                  >
-                    {item.text}
-                    {item.hasArrow && <ArrowUpRight className="h-4 w-4" />}
-                  </Link>
-                ))}
-              </nav>
-            </div>
-            </div>
-            
           </div>
 
 
@@ -216,7 +220,7 @@ export function SiteFooter() {
             <p className="text-lg font-medium text-white">&copy; Aesop</p>
           </div>
         </div>
-      </footer></div>
+      </footer></>
   )
 }
 

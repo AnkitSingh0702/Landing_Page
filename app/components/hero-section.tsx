@@ -85,29 +85,44 @@ export function HeroSection() {
   }, [emblaApi, onScroll])
 
   return (
-    <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
-      <section className="text-gray-600 body-font">
-        <div className="flex flex-col lg:flex-row py-12 lg:py-28 gap-8">
-          <div className="w-full lg:w-1/2">
-            <img className="w-full h-auto object-cover object-center rounded" alt="hero" src="https://www.aesop.com/u1nb1km7t5q7/23mX2EVjoEY3EflqXW2ajg/7fb9b7d000b8cdb875fd12bbb5ad95b0/Aesop_Festive_Sleeve_HK_2024_Web_Homepage_Secondary_Mid_Desktop_2560x1440px.jpg"/>
-          </div>
-          <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-4">
-            <p className="text-sm text-[#333]">Festive giving</p>
-            <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">A complimentary sleeve for your gifts</h2>
-            <p className="text-base lg:text-lg">Inspired by the verve of the season, a specially designed gift sleeve will swaddle your purchases when you select the &apos;gift packaging&apos; option at checkout. Exclusions apply.</p>
-            <Button 
-              variant="outline" 
-              className="flex justify-between text-black bg-transparent w-full sm:w-[291px] h-[60px] border-black/15 rounded-none hover:bg-[#333] hover:text-white transition-colors"
-            >
-              Explore Gifts
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </div>
-        </div>
-      </section>
+    <div className="max-w-[1920px] w-full mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
 
+
+      {/* 1 */}
+      <section className="text-gray-600 body-font mt-20">
+  <div className="flex flex-col-reverse lg:flex-row py-12 lg:py-28 gap-8">
+    {/* Content Section */}
+    <div className="flex flex-col w-full lg:w-1/2 px-4 lg:px-12 gap-4">
+      <p className="text-sm text-[#333]">Festive giving</p>
+      <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">
+        A complimentary sleeve for your gifts
+      </h2>
+      <p className="text-base lg:text-lg">
+        Inspired by the verve of the season, a specially designed gift sleeve will swaddle your purchases when you select the &apos;gift packaging&apos; option at checkout. Exclusions apply.
+      </p>
+      <Button
+        variant="outline"
+        className="flex justify-between text-black bg-transparent w-full sm:w-[291px] h-[60px] border-black/15 rounded-none hover:bg-[#333] hover:text-white transition-colors"
+      >
+        Explore Gifts
+        <ArrowRight className="ml-2 h-4 w-4" />
+      </Button>
+    </div>
+    {/* Image Section */}
+    <div className="w-full lg:w-1/2">
+      <img
+        className="w-full h-auto object-cover object-center rounded "
+        alt="hero"
+        src="https://www.aesop.com/u1nb1km7t5q7/23mX2EVjoEY3EflqXW2ajg/7fb9b7d000b8cdb875fd12bbb5ad95b0/Aesop_Festive_Sleeve_HK_2024_Web_Homepage_Secondary_Mid_Desktop_2560x1440px.jpg"
+      />
+    </div>
+  </div>
+</section>
+
+
+      {/* 2 */}
       <section className="text-gray-600 body-font py-12 lg:py-20">
-        <div className="px-6 lg:px-8">
+        <div className=" lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="aspect-w-16 aspect-h-9">
@@ -192,7 +207,7 @@ export function HeroSection() {
       </div>
 
       <section className="text-gray-600 body-font py-12 lg:py-20">
-        <div className="px-6 lg:px-8">
+        <div className=" lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="aspect-w-16 aspect-h-9">
@@ -225,12 +240,15 @@ export function HeroSection() {
         </div>
       </section>
 
+
+
+
       <section className="text-gray-600 body-font py-12 lg:py-20">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-4 mb-8 lg:mb-0">
             <p className="text-sm text-[#333]">Our online offering</p>
             <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">Gestures to enhance your experience</h2>
-            <p className="text-base lg:text-lg mb-8">Discover a suite of complimentary additions available with every order, including curated product samples, gift wrapping in our signature cotton bag and personalised gift messaging.</p>
+            <p className="text-base lg:text-lg mb-5">Discover a suite of complimentary additions available with every order, including curated product samples, gift wrapping in our signature cotton bag and personalised gift messaging.</p>
             <Button 
               variant="outline" 
               className="flex justify-between text-black bg-transparent w-full sm:w-[291px] h-[60px] border-black/15 rounded-none hover:bg-[#333] hover:text-white transition-colors"
@@ -255,14 +273,14 @@ export function HeroSection() {
       </section>
 
       <section className="text-gray-600 body-font py-12 lg:py-20">
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-3">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
             <img className="w-full h-auto object-cover object-center" alt="hero" src="https://www.aesop.com/u1nb1km7t5q7/6FbqraGc96gts4wqXBENFI/7af21353122e60409a730e81ba9e434a/Aesop_Gift_Kits_2022-23_Web_Homepage_Secondary_Corporate_Gifting_Mid_Desktop_2560x1440px.jpg"/>
           </div>
           <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-4">
             <p className="text-sm text-[#333]">Tokens of appreciation</p>
             <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">Corporate gifts</h2>
-            <p className="text-base lg:text-lg mb-8">Find a variety of gift-giving options, ideal for honouring treasured colleagues and clients. Trained consultants will be pleased to guide your selections and assist with delivery.</p>
+            <p className="text-base lg:text-lg mb-8 mt-4">Find a variety of gift-giving options, ideal for honouring treasured colleagues and clients. Trained consultants will be pleased to guide your selections and assist with delivery.</p>
             <Button 
               variant="outline" 
               className="flex justify-between text-black bg-transparent w-full sm:w-[291px] h-[60px] border-black/15 rounded-none hover:bg-[#333] hover:text-white transition-colors"
@@ -278,7 +296,7 @@ export function HeroSection() {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-4 mb-8 lg:mb-0">
             <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">Store locator</h2>
-            <p className="text-base lg:text-lg mb-8">Our consultants are available to host you in-store and provide tailored guidance on gift purchases.</p>
+            <p className="text-base lg:text-lg mb-4 mt-4">Our consultants are available to host you in-store and provide tailored guidance on gift purchases.</p>
             <Button 
               variant="outline" 
               className="flex justify-between text-black bg-transparent w-full sm:w-[291px] h-[60px] border-black/15 rounded-none hover:bg-[#333] hover:text-white transition-colors"
@@ -293,12 +311,12 @@ export function HeroSection() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font py-12 lg:py-20">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
+      <section className="text-gray-600 body-font py-12 lg:py-20 ">
+        <div className="flex flex-col lg:flex-row gap-2">
+          <div className="w-full lg:w-1/2 mb-8 lg:mb-0 sm:mr-2">
             <img className="w-full h-auto object-cover object-center" alt="hero" src="https://www.aesop.com/u1nb1km7t5q7/48WUU7O1mDZ0jSogoWRyNl/151c278f42d867e1d2dd786e74174ab1/Aesop_IFT_Event_TH_Web_Homepage_Secondary_Mid_Desktop_2560x1440px.jpg"/>
           </div>
-          <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-4">
+          <div className="flex flex-col w-full lg:w-1/2 px-0 lg:px-12 gap-6">
             <h2 className="text-2xl lg:text-[32px] text-[#333] font-heading">Virtual guidance from home&apos;s comfort</h2>
             <p className="text-base lg:text-lg mb-8">For advice on our range of formulations, we welcome you to book a complimentary live consultation. Following your appointment, you will receive a bespoke product sample when you place an order.</p>
             <Button 
@@ -312,8 +330,8 @@ export function HeroSection() {
         </div>
       </section>
 
-      <div className='text-center py-12 lg:py-20 sm:py-10'>
-        <p className='font text-2xl lg:text-3xl tracking-wide text-[#333]'>&apos;The manner of giving is worth more than the gift.&apos;</p>
+      <div className='text-center justify-center items-center flex flex-col py-20   '>
+        <p className='font text-2xl lg:text-3xl  text-[#333]'>&apos;The manner of giving is worth more than the gift.&apos;</p>
         <p className='text-sm mt-2'>Pierre Corneille</p>
       </div>
     </div>

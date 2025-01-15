@@ -210,7 +210,7 @@ export function MainCarousel() {
         </div>
       </div>
       
-      <div className="absolute -bottom-[4rem] left-1/2 transform -translate-x-1/2 flex items-center   px-4 py-2 ">
+      <div className="absolute -bottom-[4rem] left-1/2 transform -translate-x-1/2 flex items-center   px-4 py-2  ">
         <Button 
           variant="ghost" 
           size="icon" 
