@@ -18,19 +18,19 @@ const films = [
     {
         type: "Film",
         title: "An Aesop film can stir the imagination",
-        image: "/p1.png",
+        image: "/p2.png",
         href: "#"
     },
     {
         type: "Film",
         title: "An Aesop film can stir the imagination",
-        image: "/p1.png",
+        image: "/p3.png",
         href: "#"
     },
     {
         type: "Film",
         title: "An Aesop film can stir the imagination",
-        image: "/p1.png",
+        image: "/p4.png",
         href: "#"
     }
 ]

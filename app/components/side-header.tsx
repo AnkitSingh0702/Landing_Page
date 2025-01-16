@@ -2,8 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Search, Heart, ChevronRight, X } from "lucide-react";
-import { BsPlus } from "react-icons/bs";
+import { Search, Heart, ChevronRight, X, Plus } from "lucide-react";
 import { HiOutlineMenu } from "react-icons/hi";
 import Image from "next/image";
 import { MobileFilms } from "./nav-compo";
@@ -46,19 +45,22 @@ export function SiteHeader() {
           orders may be delayed. Conditions apply.
         </p>
       </div>
-      <div className="bg-black text-white px-4 py-2 text-xs sm:text-sm text-center">
-        <div className="hover:border-b duration-500 ease-in-out border-white flex items-center justify-center">
-          <p className="mr-2">
-            Enjoy complimentary shipping on orders over $400. Click and Collect
-            is now available in Hong Kong.
-          </p>
-          <BsPlus size={20} color="#fffef2" />
-        </div>
+      <div className="bg-black text-white px-4 py-2 text-xs sm:text-sm">
+      <div className="group flex items-center justify-center cursor-pointer">
+        <p className="mr-2 group-hover:border-b border-transparent transition-[border-color] duration-500 ease-in-out hover:border-white">
+          Enjoy complimentary shipping on orders over $400. Click and Collect
+          is now available in Hong Kong.
+        </p>
+        <Plus 
+          className="w-5 h-5 text-white transition-transform duration-500 ease-in-out group-hover:rotate-180" 
+        />
       </div>
+    </div>
+  
 
       {/* Header */}
       <div className="bg-[#fffef2] px-4 py-3 sm:px-6 sm:py-5 md:px-10 md:py-7 w-full z-40">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className=" flex items-center justify-between">
           <div className="flex items-center justify-between w-full">
         {/* Hamburger Menu Icon */}
         <Image
